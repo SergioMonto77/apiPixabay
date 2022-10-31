@@ -1,0 +1,14 @@
+{
+    "name": "sergi/api-pixa-bay",
+    "description": "Uso de api Pixabay",
+    "type": "project",
+    "license": "gnu/gpl",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
