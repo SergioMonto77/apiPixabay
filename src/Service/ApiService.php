@@ -16,7 +16,7 @@
             $imagenes=[];
 
             $datosUrl= file_get_contents(URL);
-            $datosJson= json_decode($datosUrl);
+            $datosJson= json_decode($datosUrl); //convierto a Json los datos
 
             $datosImg= $datosJson->hits;
 
