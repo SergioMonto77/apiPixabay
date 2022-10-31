@@ -20,10 +20,13 @@
 
             $datosImg= $datosJson->hits;
 
+            $cont=1;
             foreach($datosImg as $img){
                 $imagenes[]= (new ModeloDatos\Imagenes)->setImagen($img->webformatURL)
                 ->setAutor($img->user)
                 ->setLikes($img->likes);
+                if($cont==20) break;
+                $cont++;
             }
 
             return $imagenes;
